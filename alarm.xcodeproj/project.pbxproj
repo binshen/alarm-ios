@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD57E9EB1D5C527B0065FF75 /* RMQClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD57E9E71D5C50EB0065FF75 /* RMQClient.framework */; };
+		FD57E9ED1D5C52F70065FF75 /* RMQClient.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD57E9E71D5C50EB0065FF75 /* RMQClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD6AC85F1D5D6D5500878E6F /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD6AC85E1D5D6D5500878E6F /* alarm.wav */; };
 		FDE5D6351D5B1881004088A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE5D6341D5B1881004088A7 /* main.m */; };
 		FDE5D6381D5B1881004088A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE5D6371D5B1881004088A7 /* AppDelegate.m */; };
-		FDE5D63B1D5B1881004088A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE5D63A1D5B1881004088A7 /* ViewController.m */; };
 		FDE5D63E1D5B1881004088A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE5D63C1D5B1881004088A7 /* Main.storyboard */; };
 		FDE5D6401D5B1881004088A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE5D63F1D5B1881004088A7 /* Assets.xcassets */; };
 		FDE5D6431D5B1881004088A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE5D6411D5B1881004088A7 /* LaunchScreen.storyboard */; };
 		FDE5D64E1D5B1881004088A7 /* alarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE5D64D1D5B1881004088A7 /* alarmTests.m */; };
 		FDE5D6591D5B1881004088A7 /* alarmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE5D6581D5B1881004088A7 /* alarmUITests.m */; };
+		FDE5D6681D5B18D3004088A7 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE5D6671D5B18D3004088A7 /* MainController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +37,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FD57E9EC1D5C52D40065FF75 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD57E9ED1D5C52F70065FF75 /* RMQClient.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FD57E9E71D5C50EB0065FF75 /* RMQClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMQClient.framework; path = Carthage/Build/iOS/RMQClient.framework; sourceTree = "<group>"; };
+		FD6AC85E1D5D6D5500878E6F /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = alarm.wav; path = ../../../Desktop/alarm.wav; sourceTree = "<group>"; };
 		FDE5D6301D5B1881004088A7 /* alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE5D6341D5B1881004088A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDE5D6361D5B1881004088A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FDE5D6371D5B1881004088A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FDE5D6391D5B1881004088A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FDE5D63A1D5B1881004088A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FDE5D63D1D5B1881004088A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDE5D63F1D5B1881004088A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDE5D6421D5B1881004088A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +67,8 @@
 		FDE5D6541D5B1881004088A7 /* alarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE5D6581D5B1881004088A7 /* alarmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = alarmUITests.m; sourceTree = "<group>"; };
 		FDE5D65A1D5B1881004088A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE5D6661D5B18D3004088A7 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		FDE5D6671D5B18D3004088A7 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD57E9EB1D5C527B0065FF75 /* RMQClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74C5F5235AFFE80D63A58DFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD57E9E71D5C50EB0065FF75 /* RMQClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDE5D6271D5B1881004088A7 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,7 @@
 				FDE5D64C1D5B1881004088A7 /* alarmTests */,
 				FDE5D6571D5B1881004088A7 /* alarmUITests */,
 				FDE5D6311D5B1881004088A7 /* Products */,
+				74C5F5235AFFE80D63A58DFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +129,11 @@
 		FDE5D6321D5B1881004088A7 /* alarm */ = {
 			isa = PBXGroup;
 			children = (
+				FD6AC85E1D5D6D5500878E6F /* alarm.wav */,
 				FDE5D6361D5B1881004088A7 /* AppDelegate.h */,
 				FDE5D6371D5B1881004088A7 /* AppDelegate.m */,
-				FDE5D6391D5B1881004088A7 /* ViewController.h */,
-				FDE5D63A1D5B1881004088A7 /* ViewController.m */,
+				FDE5D6661D5B18D3004088A7 /* MainController.h */,
+				FDE5D6671D5B18D3004088A7 /* MainController.m */,
 				FDE5D63C1D5B1881004088A7 /* Main.storyboard */,
 				FDE5D63F1D5B1881004088A7 /* Assets.xcassets */,
 				FDE5D6411D5B1881004088A7 /* LaunchScreen.storyboard */,
@@ -150,6 +179,7 @@
 				FDE5D62C1D5B1881004088A7 /* Sources */,
 				FDE5D62D1D5B1881004088A7 /* Frameworks */,
 				FDE5D62E1D5B1881004088A7 /* Resources */,
+				FD57E9EC1D5C52D40065FF75 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -164,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDE5D6601D5B1881004088A7 /* Build configuration list for PBXNativeTarget "alarmTests" */;
 			buildPhases = (
+				9222ABF9A6422893CC055DFD /* [CP] Check Pods Manifest.lock */,
 				FDE5D6451D5B1881004088A7 /* Sources */,
 				FDE5D6461D5B1881004088A7 /* Frameworks */,
 				FDE5D6471D5B1881004088A7 /* Resources */,
+				D8995BB4574825C41A4F269D /* [CP] Embed Pods Frameworks */,
+				9B6356B2DA0B51226692B2D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDE5D6631D5B1881004088A7 /* Build configuration list for PBXNativeTarget "alarmUITests" */;
 			buildPhases = (
+				197EFB96B4C46C7C6C0F4969 /* [CP] Check Pods Manifest.lock */,
 				FDE5D6501D5B1881004088A7 /* Sources */,
 				FDE5D6511D5B1881004088A7 /* Frameworks */,
 				FDE5D6521D5B1881004088A7 /* Resources */,
+				47E7FB3D728C6E744CD3E4C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +242,7 @@
 				TargetAttributes = {
 					FDE5D62F1D5B1881004088A7 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 7X3Z6AJPMX;
 					};
 					FDE5D6481D5B1881004088A7 = {
 						CreatedOnToolsVersion = 7.1;
@@ -245,6 +281,7 @@
 			files = (
 				FDE5D6431D5B1881004088A7 /* LaunchScreen.storyboard in Resources */,
 				FDE5D6401D5B1881004088A7 /* Assets.xcassets in Resources */,
+				FD6AC85F1D5D6D5500878E6F /* alarm.wav in Resources */,
 				FDE5D63E1D5B1881004088A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,13 +302,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		197EFB96B4C46C7C6C0F4969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		47E7FB3D728C6E744CD3E4C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alarmUITests/Pods-alarmUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9222ABF9A6422893CC055DFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B6356B2DA0B51226692B2D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alarmTests/Pods-alarmTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8995BB4574825C41A4F269D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alarmTests/Pods-alarmTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDE5D62C1D5B1881004088A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE5D63B1D5B1881004088A7 /* ViewController.m in Sources */,
 				FDE5D6381D5B1881004088A7 /* AppDelegate.m in Sources */,
+				FDE5D6681D5B18D3004088A7 /* MainController.m in Sources */,
 				FDE5D6351D5B1881004088A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +449,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -377,7 +492,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -411,10 +526,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = alarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moral.alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +545,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = alarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moral.alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +627,7 @@
 				FDE5D65F1D5B1881004088A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDE5D6601D5B1881004088A7 /* Build configuration list for PBXNativeTarget "alarmTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +636,7 @@
 				FDE5D6621D5B1881004088A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDE5D6631D5B1881004088A7 /* Build configuration list for PBXNativeTarget "alarmUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +645,7 @@
 				FDE5D6651D5B1881004088A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
