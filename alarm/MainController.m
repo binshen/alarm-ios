@@ -134,7 +134,6 @@ void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
     } else {
         cell.backgroundColor = [UIColor redColor];
     }
-    
     return cell;
 }
 
