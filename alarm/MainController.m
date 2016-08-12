@@ -78,12 +78,12 @@ void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
         NSMutableArray* arr = [NSMutableArray array ];
         
         [arr addObject:[NSNumber numberWithBool:YES]]; //vibrate for 2000ms
-        [arr addObject:[NSNumber numberWithInt:2000]];
+        [arr addObject:[NSNumber numberWithInt:10000]];
         [dict setObject:arr forKey:@"VibePattern"];
         [dict setObject:[NSNumber numberWithFloat:0.3] forKey:@"Intensity"];
         AudioServicesStopSystemSound(kSystemSoundID_Vibrate);
         NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-        NSArray *pattern = @[@YES, @30, @NO, @1];
+        NSArray *pattern = @[@YES, @10000, @NO, @1];
         
 //        if ([[UIDevice currentDevice] platformType] == UIDevice5SiPhone)
 //        {
