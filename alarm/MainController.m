@@ -45,7 +45,6 @@ void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
     RMQQueue *q = [ch queue:@"" options:RMQQueueDeclareExclusive];
     
     [q bind:x];
-    
     NSLog(@"Waiting for logs.");
     
     [q subscribe:^(RMQMessage * _Nonnull message) {
