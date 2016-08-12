@@ -79,13 +79,9 @@ void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
         
         [arr addObject:[NSNumber numberWithBool:YES]]; //vibrate for 2000ms
         [arr addObject:[NSNumber numberWithInt:2000]];
-        
-        
         [dict setObject:arr forKey:@"VibePattern"];
         [dict setObject:[NSNumber numberWithFloat:0.3] forKey:@"Intensity"];
-        
         AudioServicesStopSystemSound(kSystemSoundID_Vibrate);
-        
         NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
         NSArray *pattern = @[@YES, @30, @NO, @1];
         
@@ -97,7 +93,6 @@ void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
         
         dictionary[@"VibePattern"] = pattern;
         dictionary[@"Intensity"] = @1;
-        
         AudioServicesPlaySystemSoundWithVibration(kSystemSoundID_Vibrate, nil, dictionary);
     }];
 }
