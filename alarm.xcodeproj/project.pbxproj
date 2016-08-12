@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FD57E9EB1D5C527B0065FF75 /* RMQClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD57E9E71D5C50EB0065FF75 /* RMQClient.framework */; };
-		FD57E9ED1D5C52F70065FF75 /* RMQClient.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD57E9E71D5C50EB0065FF75 /* RMQClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD6AC85F1D5D6D5500878E6F /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = FD6AC85E1D5D6D5500878E6F /* alarm.wav */; };
+		FDA945DC1D5E170800F6941E /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FDA945DB1D5E170800F6941E /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FDA945DE1D5E170D00F6941E /* JKVValue.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FDA945DD1D5E170D00F6941E /* JKVValue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FDA945E11D5E171900F6941E /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA945DB1D5E170800F6941E /* CocoaAsyncSocket.framework */; };
+		FDA945E21D5E171D00F6941E /* JKVValue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA945DD1D5E170D00F6941E /* JKVValue.framework */; };
 		FDE5D6351D5B1881004088A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE5D6341D5B1881004088A7 /* main.m */; };
 		FDE5D6381D5B1881004088A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE5D6371D5B1881004088A7 /* AppDelegate.m */; };
 		FDE5D63E1D5B1881004088A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE5D63C1D5B1881004088A7 /* Main.storyboard */; };
@@ -44,7 +47,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FD57E9ED1D5C52F70065FF75 /* RMQClient.framework in CopyFiles */,
+				FDA945DC1D5E170800F6941E /* CocoaAsyncSocket.framework in CopyFiles */,
+				FDA945DE1D5E170D00F6941E /* JKVValue.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,8 @@
 /* Begin PBXFileReference section */
 		FD57E9E71D5C50EB0065FF75 /* RMQClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMQClient.framework; path = Carthage/Build/iOS/RMQClient.framework; sourceTree = "<group>"; };
 		FD6AC85E1D5D6D5500878E6F /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = alarm.wav; path = ../../../Desktop/alarm.wav; sourceTree = "<group>"; };
+		FDA945DB1D5E170800F6941E /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		FDA945DD1D5E170D00F6941E /* JKVValue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JKVValue.framework; path = Carthage/Build/iOS/JKVValue.framework; sourceTree = "<group>"; };
 		FDE5D6301D5B1881004088A7 /* alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE5D6341D5B1881004088A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDE5D6361D5B1881004088A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA945E11D5E171900F6941E /* CocoaAsyncSocket.framework in Frameworks */,
+				FDA945E21D5E171D00F6941E /* JKVValue.framework in Frameworks */,
 				FD57E9EB1D5C527B0065FF75 /* RMQClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +108,8 @@
 		74C5F5235AFFE80D63A58DFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDA945DD1D5E170D00F6941E /* JKVValue.framework */,
+				FDA945DB1D5E170800F6941E /* CocoaAsyncSocket.framework */,
 				FD57E9E71D5C50EB0065FF75 /* RMQClient.framework */,
 			);
 			name = Frameworks;
@@ -533,7 +543,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = alarm/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moral.alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -552,7 +562,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = alarm/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moral.alarm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
